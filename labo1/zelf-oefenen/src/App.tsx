@@ -1,11 +1,24 @@
 const MultiplicationTable = () => {
-    const numbers = Array.from({ length: 25 }, (_, i) => i * 2 + 1);
+    const numbers: number[][] = Array.from({ length: 10 }, (_, rowIndex) =>
+        Array.from(
+            { length: 10 },
+            (_, colIndex) => (rowIndex + 1) * (colIndex + 1)
+        )
+    );
 
     return (
         <>
-            {numbers.map((number) => (
-                <h1>{number}</h1>
-            ))}
+            <table cellPadding="5">
+                <tbody>
+                    {numbers.map((row) => (
+                        <tr>
+                            {row.map((cell) => (
+                                <td>{cell}</td>
+                            ))}
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
         </>
     );
 };
