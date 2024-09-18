@@ -23,12 +23,8 @@ const getRandomSlots = (numberOfSlots: number): number[] => {
 
 const App = () => {
     const slots: number[] = getRandomSlots(3);
-
     const slotImages: string[] = [cherry, lemon, melon, prune, seven];
-
     const winCondition: boolean = slots.every((slot) => slot === slots[0]);
-
-    console.log(winCondition);
 
     return (
         <>
