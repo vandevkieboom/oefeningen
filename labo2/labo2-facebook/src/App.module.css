@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -14,7 +16,7 @@
     margin-bottom: 10px;
     padding: 12px;
 
-    box-shadow: 0 0 5px rgba(0, 0, 0, .30);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     /* Not original, just a test */
 }
 
@@ -31,7 +33,7 @@
     height: 40px;
 }
 
-.co_name>a {
+.co_name > a {
     font-family: Helvetica;
     font-size: 14px;
     font-weight: bold;
@@ -42,7 +44,7 @@
     margin-bottom: 2px;
 }
 
-.co_name>a:hover {
+.co_name > a:hover {
     text-decoration: underline;
 }
 
@@ -52,12 +54,12 @@
     color: #90949c;
 }
 
-.time>a {
+.time > a {
     color: #90949c;
     text-decoration: none;
 }
 
-.time>a:hover {
+.time > a:hover {
     text-decoration: underline;
 }
 
@@ -71,7 +73,7 @@
 .options:hover {
     color: black;
     /* Fallback */
-    color: rgba(0, 0, 0, .30);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .content {
@@ -79,6 +81,7 @@
     font-family: Helvetica, sans-serif;
     font-size: 14px;
     line-height: 1.38;
+    color: black;
 }
 
 .reference {
@@ -93,7 +96,7 @@
 
 .reference_content {
     border: 2px solid black;
-    border: 2px solid rgba(0, 0, 0, .1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     border-top: 0;
     padding: 10px 12px 10px 12px;
 }
@@ -101,7 +104,7 @@
 .reference:hover .reference_content {
     border-color: black;
     /* Fallback */
-    border-color: rgba(0, 0, 0, .15);
+    border-color: rgba(0, 0, 0, 0.15);
 }
 
 .reference_title {
@@ -111,12 +114,14 @@
     line-height: 22px;
 
     margin-bottom: 5px;
+    color: black;
 }
 
 .reference_subtitle {
     font-family: Helvetica;
     font-size: 12px;
     line-height: 16px;
+    color: black;
 }
 
 .reference_font {
@@ -142,7 +147,6 @@
 
     border-top: 1px solid #e5e5e5;
     padding-top: 4px;
-
 }
 
 .social_buttons span {

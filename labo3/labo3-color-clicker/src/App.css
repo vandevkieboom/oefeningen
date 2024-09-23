@@ -1,0 +1,9 @@
+body {
+    justify-content: center;
+}
+
+.ColorSquareContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
