@@ -1,0 +1,15 @@
+body {
+    justify-content: center;
+}
+
+.background-image {
+    width: 420px;
+    height: 660px;
+    background-image: url(rickroll-roll.gif);
+}
+
+.input-box {
+    border: 1px solid black;
+    padding: 1rem;
+    width: 420px;
+}
