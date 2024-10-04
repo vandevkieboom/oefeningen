@@ -1,0 +1,20 @@
+body {
+    padding: 10rem;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th {
+    background-color: #ffffff12;
+    cursor: pointer;
+}
+
+th,
+td {
+    padding: 1.5rem;
+    border: 1px solid black;
+}
