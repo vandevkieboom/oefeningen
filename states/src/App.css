@@ -1,3 +1,49 @@
 body {
     justify-content: center;
 }
+
+.productContainer {
+    width: 100%;
+    padding: 0rem 2rem;
+}
+
+.searchContainer {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+}
+
+input[type='search'] {
+    width: 60%;
+    margin: 0rem 1rem;
+}
+
+button {
+    cursor: pointer;
+    padding: 0.4rem;
+    width: 20%;
+    margin: 1rem;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.error {
+    padding: 0.4rem;
+    background-color: rgb(255, 80, 80);
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.success {
+    padding: 0.4rem;
+    background-color: rgb(80, 255, 109);
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
