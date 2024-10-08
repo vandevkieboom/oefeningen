@@ -1,0 +1,8 @@
+body {
+    padding: 10rem;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+}
