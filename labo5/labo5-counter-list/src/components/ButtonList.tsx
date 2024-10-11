@@ -5,15 +5,14 @@ const ButtonList = () => {
 
     const handleIncrement = (index: number) => {
         let countersCpy = [...counters];
-        countersCpy[index] -= 1;
+        countersCpy[index]++;
         setCounters(countersCpy);
-
         //setCounters(counters.map((counter, i) => i === index ? counter - 1 : counter));
     };
 
     const handleDecrement = (index: number) => {
         let countersCpy = [...counters];
-        countersCpy[index] += 1;
+        countersCpy[index]--;
         setCounters(countersCpy);
     };
 
@@ -21,15 +20,15 @@ const ButtonList = () => {
         <>
             {counters.map((item, index) => (
                 <div className="flex-container" key={index}>
-                    <button onClick={() => handleIncrement(index)}>Decrement</button>
+                    <button onClick={() => handleDecrement(index)}>Decrement</button>
                     <p style={{ color: item < 0 ? 'red' : item > 0 ? 'green' : 'white' }}>
                         Count: {item}
                     </p>
-                    <button onClick={() => handleDecrement(index)}>Increment</button>
+                    <button onClick={() => handleIncrement(index)}>Increment</button>
                 </div>
             ))}
 
-            {/* <p>Som van de tellens: {counters.reduce((a: number, b: number) => a + b)}</p> */}
+            <p>Som van de tellens: {counters.reduce((a: number, b: number) => a + b, 0)}</p>
 
             <div>
                 <button onClick={() => setCounters([...counters, 0])}>Add counter</button>
