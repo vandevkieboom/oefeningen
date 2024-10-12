@@ -1,0 +1,13 @@
+body {
+    padding: 10rem;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+}
+
+button {
+    margin: 1rem;
+    cursor: pointer;
+}
