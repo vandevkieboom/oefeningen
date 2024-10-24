@@ -1,0 +1,39 @@
+.championgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 350px);
+  justify-content: center;
+  align-content: center;
+  transition: transform 0.3s ease;
+}
+
+.championgrid img {
+  transition: transform 0.3s ease;
+}
+
+.championgrid img:hover {
+  transform: scale(1.1);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  margin-right: 50px;
+}
+
+.header input[type='text'] {
+  height: 20px;
+  padding: 10px;
+  margin-top: 5px;
+}
